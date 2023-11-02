@@ -2,104 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            background-image: url('webdesign.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center; /* 맨 위부터 시작하도록 설정 */
+            height: 300vh; /* 긴 길이로 조정 */
+        }
+        .container {
+            height: 100vh; /* 화면 높이를 100%로 설정 */
+            overflow: auto; /* 컨테이너 내용이 화면을 초과할 경우 스크롤 표시 */
+        }
+        /* 나머지 스타일은 동일 */
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>Happy ONEW Day</title>
-</head>
-<body>
-    <div class="container">
-        <nav class="global-nav">
-            <div class="global-nav-links">
-                <a href="#" class="global-nav-item">Home</a> 
-                <a href="./letter" class="global-nav-item">Letter</a> 
-                <a href="./photobooth" class="global-nav-item">Photobooth</a> 
-                <a href="./quiz" class="global-nav-item">Quiz</a>
-            </div>
-        </nav>
-        
-    <h1>Happy<br>ONEW<br>Day</h1><br>
-       
-
-        
-    <p style="font-size:14px" class="description">
-        이 사이트는 온유에게 특별한 선물을 주고 싶어 만들어진 사이트입니다.<br> 
-        이벤트성 페이지로, 2023년 12월 이후 폭파될 예정입니다˙ᵕ˙ <br> </p>
-    <p style="font-size:12px" class="description">
-        This site was created to give ONEW a special gift.
-        It's an event page, scheduled to explode after December 2023˙ᵕ˙<br></p>
-    <p style="font-size:14px" class="description">
-        <br><strong>Letter</strong> 탭에서 온유에게 편지를 남기실 수 있습니다.ᐟ<br>
-        남겨주신 편지는 책으로 엮어 온유에게 전달됩니다(⸝⸝•ᴗ•⸝⸝)੭♡<br></p>
-    <p style="font-size:12px" class="description">
-        On the <strong>Letter</strong> tab, you can leave a letter to Onew.ᐟ
-        The letter you left will be written into a book and delivered to Onew(⸝⸝•ᴗ•⸝⸝)੭♡ <br></p>
-    <p style="font-size:14px" class="description">
-        <br><strong>Photobooth</strong> 탭에서 프레임과 함께 사진을 찍으실 수 있습니다.<br>
-        사진은 서버/기기에 저장되지 않으니 캡처해 간직해주세요(*˙˘˙)♡<br></p>
-    <p style="font-size:12px" class="description">
-        You can take pictures with the frame on the <strong>Photobooth</strong> tab.<br>
-        Pictures are not saved on the server/device, so please capture them and keep them(*˙˘˙)♡<br></p>
-    <p style="font-size:14px" class="description">
-        <strong>Quiz</strong> 탭에서 퀴즈를 푼 뒤 트위터에 <strong>#happy23onewday</strong>와 함께 정답을 업로드해주세요.ᐟ<br>
-        추첨을 통해 선물을 보내드립니다＾∇＾(한국 거주자 한정)<br></p>
-    <p style="font-size:12px" class="description">
-        Please take the quiz on the <strong>Quiz</strong> tab and upload the correct answer on Twitter with <strong>#happy23onewday</strong>.ᐟ
-        I will send you a gift through a lottery＾∇＾(Korea residents only)
-        </p>
-
-    <div class="pin"></div>
-        </div>
-    
-    <section class="scroll-section" id="scroll-section-3">
-        <canvas class="image-blend-canvas" width="1920" height="1080"></canvas>
-        <h4>ONEW - 보통의 밤 ( Always )</h4>
-        <audio autoplay loop>
+    <audio autoplay loop>
         <source src="/Users/yum/Desktop/231214/보통의 밤 Always.mp3" type="audio/mp3">
         </audio>
-        <p class="canvas-caption">
-                시간은 가고<br>
-                불안함이 널 삼킬 때<br>
-                그 어떤 날도<br>
-                난 한결같이 네 밤을 지킬게<br><br>
+</head>
+<body>
+    <header>
+    <div class="container" align="right">
+        <nav class="global-nav">
+            <div class="global-nav-links">
+                <a href="index.html" class="global-nav-item">Home</a>
+                <a href="./letter" class="global-nav-item">Letter</a>
+                <a href="./photobooth" class="global-nav-item">Photobooth</a>
+                <a href="./quiz" class="global-nav-item">Quiz</a>
+        </div></nav></div></header><br>
 
-                기쁜 날은 늘 언제나 짧아<br>
-                아픔은 잘 잊혀지지 않아<br>
-                그래도 난 너의 보통의 밤에<br>
-                항상 그렇게 네 옆에 있을게<br><br>
-
-                사랑도 때론 답이 아닌 듯한 그때<br>
-                네 맘이 맞다고<br>
-                흔들림 없는 대답을 해 줄게<br><br>
-
-                좋은 날은 늘 아쉽게 짧아<br>
-                어둠은 낮보다 길겠지만<br>
-                보통의 날 너의 보통의 밤에<br>
-                난 변함없이 네 편이 돼 줄게<br><br>
-
-                자 이제 깊은 잠에 들면<br>
-                긴 하루도 어제가 되는 거야<br>
-                소란한 꿈도 없을거야<br>
-                난 여기 머무를게<br><br>
-
-                시간은 가고<br>
-                불안함이 널 삼킬 때<br>
-                그 어떤 날도<br>
-                난 한결같이 네 밤을 지킬게<br>
-                난 여전히 너의 곁에<br>
-                Always<br>
-        </p>
-    </section>
-
-
-        <footer class="footer">
+        <footer class="footer" align="center">
             <span> ©피치&nbsp;2023</span>
-            <span> This website is not official and commercial site that published by GitHub Pages.</span>
-        </footer>
-        <a class="gh-logo" href="https://github.com/peachchy" target="_blank" title="GitHub">
-            <img src="C:\Users\BME_311_Int_2\Desktop\꿩\GitHub Logo.png" alt="GitHub Logo">
+            <span> This website is not an official and commercial site that published by GitHub Pages.</span><br><br>
+            <a class="gh-logo" href="https://github.com/peachchy" target="_blank" title="GitHub">
+            <img src="GitHub Logo.png" alt="GitHub Logo">
         </a>
+        </footer>
     </div>
-    <script src="js/main.js"></script>
 </body>
 </html>
+
